@@ -124,9 +124,7 @@ if(isset($_POST['people']))
                                 $myCard[] = $deck[$key];
                                 unset($deck[$key]);
                             }
-                        } elseif (@count($peopleCard) == 1) {
-                            $key = $cards;
-                            $myCard[] = $deck[$key];
+                        } else{
                             unset($deck[$key]);
                         }
                         $displayCard = implode(' , ', $myCard); 
